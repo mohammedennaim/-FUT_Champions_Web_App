@@ -1,0 +1,146 @@
+body{
+    background: url(../assets/img/stadium_background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section{
+    display: flex;
+}
+
+.badge{
+    width: 8%;
+}
+
+.team{
+    position: absolute;
+    top: 0;
+    left: 0%;
+}
+
+.team img:nth-child(1){
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    
+}
+
+.formation{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+}
+
+.form-popup {
+    position: fixed;
+    top: 2%;
+    right: 5%;
+    height: 91vh;
+    width: 500px;
+    padding: 20px;
+    scrollbar-width: none;
+}
+
+h2,label{
+    color: white;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload{
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.uplaod {
+    border-radius: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+.upload-photo,.upload-flag,.upload-logo{
+    width: 32%;
+    height: 10%;
+    padding: 10px 10px;
+    cursor: pointer;
+    display: inline-block;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.form h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.form-elements label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form-elements input,
+.form-elements select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.form-elements input:focus,
+.form-elements select:focus {
+    border-color: #007bff;
+}
+
+.form-elements
+.submit-form-btn {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #002aff;
+    color: #f7f7f7;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 32px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #e0e0e0; 
+}
+
+body::before {
+    content: "";
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+} 
