@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./src/styles/style.css">
-    <link rel="stylesheet" href="./src/styles/output.css">
 </head>
 
 <body>
@@ -14,17 +13,17 @@
         <aside id="aside">
             <img src="./src/assets/img/stadium_background.svg" alt="" class="stadium">
             <div class="team">
-                <img src="./src/assets/img/badge_gold.webp" alt="" class="badge">
-                <img src="./src/assets/img/badge_gold.webp" alt="" class="badge">
-                <img src="./src/assets/img/badge_gold.webp" alt="" class="badge">
-                <img src="./src/assets/img/badge_gold.webp" alt="" class="badge">
-                <img src="./src/assets/img/badge_gold.webp" alt="" class="badge">
-                <img src="./src/assets/img/badge_gold.webp" alt="" class="badge">
-                <img src="./src/assets/img/badge_gold.webp" alt="" class="badge">
-                <img src="./src/assets/img/badge_gold.webp" alt="" class="badge">
-                <img src="./src/assets/img/badge_gold.webp" alt="" class="badge">
-                <img src="./src/assets/img/badge_gold.webp" alt="" class="badge">
-                <img src="./src/assets/img/badge_gold.webp" alt="" class="badge">
+                <img src="./src/assets/img/badge_total_rush.webp" alt="" class="badge">
+                <img src="./src/assets/img/badge_total_rush.webp" alt="" class="badge">
+                <img src="./src/assets/img/badge_total_rush.webp" alt="" class="badge">
+                <img src="./src/assets/img/badge_total_rush.webp" alt="" class="badge">
+                <img src="./src/assets/img/badge_total_rush.webp" alt="" class="badge">
+                <img src="./src/assets/img/badge_total_rush.webp" alt="" class="badge">
+                <img src="./src/assets/img/badge_total_rush.webp" alt="" class="badge">
+                <img src="./src/assets/img/badge_total_rush.webp" alt="" class="badge">
+                <img src="./src/assets/img/badge_total_rush.webp" alt="" class="badge">
+                <img src="./src/assets/img/badge_total_rush.webp" alt="" class="badge">
+                <img src="./src/assets/img/badge_total_rush.webp" alt="" class="badge">
             </div>
         </aside>
 
@@ -41,18 +40,18 @@
                             <div class="upload-photo">
                                 <div>
                                 <label for="photo" class="custom-file-upload">Photo</label>
-                                <input id="file-upload" type="file"  name="photo" class="inputs"/> 
+                                <input id="photo" type="file"  name="photo" class="inputs"/> 
                                 </div>
                             </div>
                             <div class="upload-flag">
                                 <div>
-                                <label for="file-upload" class="custom-file-upload">Flag</label>
-                                <input id="file-upload" type="file" name="flag" class="inputs"/> 
+                                <label for="flag" class="custom-file-upload">Flag</label>
+                                <input id="flag" type="file" name="flag" class="inputs"/> 
                                 </div>
                             </div>
                             <div class="upload-logo">
                                 <div>
-                                <label for="file-upload" class="custom-file-upload">Logo</label>
+                                <label for="logo" class="custom-file-upload">Logo</label>
                                 <input id="file-upload" type="file" name="logo" class="inputs"/> 
                                 </div>
                             </div>
@@ -60,7 +59,7 @@
                         <div>
                             <label for="position">Position</label>
                         <select id="position" name="position" class="inputs">
-                            <option>Goal Keeper (GK)</option>
+                            <option></option>
                             <option>Defender central (CB)</option>
                             <option>Defender full-back left (LB)</option>
                             <option>Defender full-back right (RB)</option>
@@ -69,11 +68,13 @@
                             <option>Central striker (ST)</option>
                             <option>Winger left (LW)</option>
                             <option>Winger right (RW)</option>
+                            <option>Goal Keeper (GK)</option>
                         </select>
                         </div>
                         <div>
                             <label for="nationality">Nationality</label>
                         <select id="nationality" name="nationality" class="inputs">
+                            <option value=""></option>
                             <option value="morocco">Morocco</option>
                             <option value="albania">Albania</option>
                             <option value="algeria">Algeria</option>
@@ -100,8 +101,9 @@
                         <div>
                             <label for="club">Club</label>
                         <select id="club" name="club" class="inputs">
-                            <option value="real-madrid">Real Madrid</option>
+                            <option value=""></option>
                             <option value="barcelona">FC Barcelona</option>
+                            <option value="real-madrid">Real Madrid</option>
                             <option value="manchester-united">Manchester United</option>
                             <option value="manchester-city">Manchester City</option>
                             <option value="bayern-munich">Bayern Munich</option>
@@ -123,6 +125,7 @@
                                 <label for="rating">Rating</label>
                                 <input type="number" id="rating" name="rating" min="1" max="99" class="inputs"
                                 placeholder="player rating">
+                                <span></span>
                             </div>
                             <div>
                                 <label for="pace">pace</label>
@@ -156,7 +159,7 @@
                         
                         </div>
                         <button type="button" class="submit-form-btn" onclick="add()">Add player</button>
-                    </div>
+                    </form>
                 </div>
             </div>
         </article>
