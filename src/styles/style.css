@@ -177,7 +177,9 @@ form .submit-form-btn {
     margin-top: 32px;
 }
 
-
+.erreur{
+    color: red;
+}
 
 @media screen and (max-width: 320px){
     section{
