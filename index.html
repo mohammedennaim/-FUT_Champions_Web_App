@@ -13,51 +13,50 @@
         <aside id="aside">
             <img src="./src/assets/img/stadium_background.svg" alt="" class="stadium">
             <div class="team">
-                <img src="./src/assets/img/badge_total_rush.webp" alt="" class="badge">
-                <img src="./src/assets/img/badge_total_rush.webp" alt="" class="badge">
-                <img src="./src/assets/img/badge_total_rush.webp" alt="" class="badge">
-                <img src="./src/assets/img/badge_total_rush.webp" alt="" class="badge">
-                <img src="./src/assets/img/badge_total_rush.webp" alt="" class="badge">
-                <img src="./src/assets/img/badge_total_rush.webp" alt="" class="badge">
-                <img src="./src/assets/img/badge_total_rush.webp" alt="" class="badge">
-                <img src="./src/assets/img/badge_total_rush.webp" alt="" class="badge">
-                <img src="./src/assets/img/badge_total_rush.webp" alt="" class="badge">
-                <img src="./src/assets/img/badge_total_rush.webp" alt="" class="badge">
-                <img src="./src/assets/img/badge_total_rush.webp" alt="" class="badge">
+                <img src="./src/assets/img/badge_gold.webp" alt="" class="badge gk">
+                <img src="./src/assets/img/badge_gold.webp" alt="" class="badge lb">
+                <img src="./src/assets/img/badge_gold.webp" alt="" class="badge lcb">
+                <img src="./src/assets/img/badge_gold.webp" alt="" class="badge rcb">
+                <img src="./src/assets/img/badge_gold.webp" alt="" class="badge rb">
+                <img src="./src/assets/img/badge_gold.webp" alt="" class="badge lcm">
+                <img src="./src/assets/img/badge_gold.webp" alt="" class="badge rcm">
+                <img src="./src/assets/img/badge_gold.webp" alt="" class="badge cm">
+                <img src="./src/assets/img/badge_gold.webp" alt="" class="badge rf">
+                <img src="./src/assets/img/badge_gold.webp" alt="" class="badge lf">
+                <img src="./src/assets/img/badge_gold.webp" alt="" class="badge st">
             </div>
         </aside>
 
         <article>
-            <div class="form-popup">
-                <div class="form">
-                    <h2>Ajouter Player</h2>
-                    <form class="form-elements">
-                        <div>
-                            <label for="name">Name</label>
+            <div class="form-groupe">
+                <h2>Ajouter Player</h2>
+                <form>
+                    <div>
+                        <label for="name">Name</label>
                         <input type="text" id="name" placeholder="Enter player name" name="Name" class="inputs">
-                        </div>
-                        <div class="uplaod">
-                            <div class="upload-photo">
-                                <div>
+                    </div>
+                    <div class="uplaod">
+                        <div class="upload-photo">
+                            <div>
                                 <label for="photo" class="custom-file-upload">Photo</label>
-                                <input id="photo" type="file"  name="photo" class="inputs"/> 
-                                </div>
-                            </div>
-                            <div class="upload-flag">
-                                <div>
-                                <label for="flag" class="custom-file-upload">Flag</label>
-                                <input id="flag" type="file" name="flag" class="inputs"/> 
-                                </div>
-                            </div>
-                            <div class="upload-logo">
-                                <div>
-                                <label for="logo" class="custom-file-upload">Logo</label>
-                                <input id="file-upload" type="file" name="logo" class="inputs"/> 
-                                </div>
+                                <input id="photo" type="file" name="photo" class="inputs" />
                             </div>
                         </div>
-                        <div>
-                            <label for="position">Position</label>
+                        <div class="upload-flag">
+                            <div>
+                                <label for="flag" class="custom-file-upload">Flag</label>
+                                <input id="flag" type="file" name="flag" class="inputs" />
+                            </div>
+                        </div>
+                        <div class="upload-logo">
+                            <div>
+                                <label for="logo" class="custom-file-upload">Logo</label>
+                                <input id="file-upload" type="file" name="logo" class="inputs" />
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="position">Position</label>
                         <select id="position" name="position" class="inputs">
                             <option></option>
                             <option>Defender central (CB)</option>
@@ -70,9 +69,9 @@
                             <option>Winger right (RW)</option>
                             <option>Goal Keeper (GK)</option>
                         </select>
-                        </div>
-                        <div>
-                            <label for="nationality">Nationality</label>
+                    </div>
+                    <div>
+                        <label for="nationality">Nationality</label>
                         <select id="nationality" name="nationality" class="inputs">
                             <option value=""></option>
                             <option value="morocco">Morocco</option>
@@ -96,10 +95,10 @@
                             <option value="spain">Spain</option>
                             <option value="united-states">United States</option>
                         </select>
-                        </div>
-                        
-                        <div>
-                            <label for="club">Club</label>
+                    </div>
+
+                    <div>
+                        <label for="club">Club</label>
                         <select id="club" name="club" class="inputs">
                             <option value=""></option>
                             <option value="barcelona">FC Barcelona</option>
@@ -119,54 +118,52 @@
                             <option value="dortmund">Borussia Dortmund</option>
                             <option value="tottenham">Tottenham Hotspur</option>
                         </select>
+                    </div>
+                    <div class="formation">
+                        <div class="changerFormation">
+                            <label class="label" for="rating">Rating</label>
+                            <input type="number" id="rating" name="rating" min="1" max="99"
+                                class="inputs inputsFormation" placeholder="rating">
+                            <span></span>
                         </div>
-                        <div class="formation">
-                            <div>
-                                <label for="rating">Rating</label>
-                                <input type="number" id="rating" name="rating" min="1" max="99" class="inputs"
-                                placeholder="player rating">
-                                <span></span>
-                            </div>
-                            <div>
-                                <label for="pace">pace</label>
-                                <input type="number" id="pace" name="pace" min="1" max="100" placeholder="player pace" class="inputs">
-                            </div>
-                            <div>
-                                <label for="shooting">shooting</label>
-                                <input type="number" id="shooting" name="shooting" min="1" max="99" class="inputs"
-                                    placeholder="player shooting">
-                            </div>
-                            <div>
-                                <label for="passing">passing</label>
-                                <input type="number" id="passing" name="passing" min="1" max="99" class="inputs"
-                                    placeholder="player passing">
-                            </div>
-                            <div>
-                                <label for="dribbling">dribbling</label>
-                                <input type="number" id="dribbling" name="dribbling" min="1" max="99" class="inputs"
-                                    placeholder="player dribbling">
-                            </div>
-                            <div>
-                                <label for="defending">defending</label>
-                                <input type="number" id="defending" name="defending" min="1" max="99" class="inputs"
-                                placeholder="player defending">
-                            </div>
-                            <div>
-                                <label for="physical">physical</label>
-                                <input type="number" id="physical" name="physical" min="1" max="99" class="inputs"
-                                placeholder="player physical">
-                            </div>
-                        
+                        <div class="changerFormation">
+                            <label class="label" for="pace">pace</label>
+                            <input type="number" id="pace" name="pace" min="1" max="100" placeholder="pace"
+                                class="inputs inputsFormation">
                         </div>
-                        <button type="button" class="submit-form-btn" onclick="add()">Add player</button>
-                    </form>
-                </div>
+                        <div class="changerFormation">
+                            <label class="label" for="shooting">shooting</label>
+                            <input type="number" id="shooting" name="shooting" min="1" max="99"
+                                class="inputs inputsFormation" placeholder="shooting">
+                        </div>
+                        <div class="changerFormation">
+                            <label class="label" for="passing">passing</label>
+                            <input type="number" id="passing" name="passing" min="1" max="99"
+                                class="inputs inputsFormation" placeholder="passing">
+                        </div>
+                        <div class="changerFormation">
+                            <label class="label" for="dribbling">dribbling</label>
+                            <input type="number" id="dribbling" name="dribbling" min="1" max="99"
+                                class="inputs inputsFormation" placeholder="dribbling">
+                        </div>
+                        <div class="changerFormation">
+                            <label class="label" for="defending">defending</label>
+                            <input type="number" id="defending" name="defending" min="1" max="99"
+                                class="inputs inputsFormation" placeholder="defending">
+                        </div>
+                        <div class="changerFormation">
+                            <label class="label" for="physical">physical</label>
+                            <input type="number" id="physical" name="physical" min="1" max="99"
+                                class="inputs inputsFormation" placeholder="physical">
+                        </div>
+
+                    </div>
+                    <button type="button" class="submit-form-btn" onclick="add()">Add player</button>
+                </form>
             </div>
         </article>
     </section>
 
     <script src="./src/script/main.js"></script>
 </body>
-
-
 </html>
