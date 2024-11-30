@@ -3,7 +3,7 @@ const inputs = document.querySelectorAll(".inputs");
 const selectElement = document.getElementById("position");
 let listPlayers = [];
 let arrayInputs = Array.from(inputs);
-
+afficherJoueurs()
 function validation() {
     const span = document.querySelectorAll(".erreur");
     const tableErreurs = [
@@ -53,6 +53,7 @@ function add() {
             input.value = "";
         });
     }
+    afficherJoueurs();
 }
 
 function handleSelectChange() {
@@ -102,3 +103,48 @@ function handleSelectChange() {
 }
 
 selectElement.addEventListener("change", handleSelectChange);
+
+function afficherJoueurs() {
+    // const badge = document.querySelectorAll('.badge')
+    // const arrayBadge = Array.from(badge)
+    const locals = JSON.parse(localStorage.getItem("players"))
+
+    locals.forEach(local => {
+        if (selectElement[1].value === local.position) {
+            for (let i = 0; i < document.querySelectorAll('.rating').length; i++) {
+                document.querySelectorAll('.rating')[i].innerText = local.position;
+                document.querySelectorAll('.ratingNum')[i].innerText = local.rating;
+    
+                document.querySelectorAll('.pos')[i].innerText = local.rating;
+                document.querySelectorAll('.posNum')[i].innerText = local.rating;
+    
+                document.querySelectorAll('.shooting')[i].innerText = local.shooting;
+                document.querySelectorAll('.shootingNum')[i].innerText = local.shooting;
+    
+                document.querySelectorAll('.pace')[i].innerText = local.pace;
+                document.querySelectorAll('.paceNum')[i].innerText = local.pace;
+    
+                document.querySelectorAll('.passing')[i].innerText = local.passing;
+                document.querySelectorAll('.passingNum')[i].innerText = local.passing;
+    
+                document.querySelectorAll('.dribbling')[i].innerText = local.dribbling;
+                document.querySelectorAll('.dribblingNum')[i].innerText = local.dribbling;
+    
+                document.querySelectorAll('.defending')[i].innerText = local.defending;
+                document.querySelectorAll('.defendingNum')[i].innerText = local.defending;
+    
+                document.querySelectorAll('.physical')[i].innerText = local.physical;
+                document.querySelectorAll('.physicalNum')[i].innerText = local.physical;
+                
+            } 
+            
+            
+            // document.querySelector('#player').setAttribute("src", local.photo)
+            // badge.querySelector('img').setAttribute("src", local.photo)
+            // badge.querySelector('img').setAttribute("src", local.photo)
+            // badge.querySelector('img').setAttribute("src", local.photo)
+        }
+    })
+
+}
+// window.onload(afficherJoueurs())
